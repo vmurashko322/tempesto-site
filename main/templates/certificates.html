@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <div class="b1_cert">
+    <div class="cert_text">
+        <h1>Сертификаты</h1>
+    </div>
+
+
+        <div><a href="{% static 'files/Sert_TS_Bypass.pdf' %}">Сертификат соответствия ТС сервисный байпас</a></div>
+        <div><a href="{% static 'files/Sert_tc_r_rt_eh_hph_dph_dps_nt.pdf' %}">Сертификат соответствия ТС
+            R,RT,EH,HPH,DPH,NT</a></div>
+        <div><a href="{% static 'files/Sert_tc-vx_rt-15_20_n.pdf' %}">Сертификат соответствия ТС VS,RT 15-20,N</a></div>
+        <div><a href="{% static 'files/Decl_tc_2021.pdf' %}">Декларация соответствия таможенного союза 2021</a></div>
+
+        <div class="end_text"><a href="https://www.deltapowersolutions.com/ru-ru/mcis/download-user-manual.php">Руководста по
+            эксплуатации на
+            сайте производителя</a></div>
+    </div>
+
+
+{% endblock %}

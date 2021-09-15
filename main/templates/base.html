@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
+          rel="stylesheet">
+    <title>Темпесто-бел</title>
+</head>
+<body>
+<header class="header">
+    <a href=""><img src="{% static 'img/tempesto_dist.png' %}" alt="Tempesto" class=" header_logo"></a>
+    <div class="contacts">
+        <a href="tel:+375 29 855 05 16">МТС +375 29 855 05 16</a>
+        <a href="tel:+375 29 122 01 90">А1 +375 29 122 01 90</a>
+        <a href="mailto:info@tempesto.by">info@tempesto.by</a>
+    </div>
+    <nav class="nav">
+        <a class="nav_link" href="{% url 'main' %}">Главная</a>
+        <a class="nav_link" href="{% url 'equipment'  %}">Оборудование</a>
+        <a class="nav_link" href="{% url 'service'  %}">Услуги и сервис</a>
+        <a class="nav_link" href="{% url 'rent'  %}">Аренда ИБП</a>
+        <a class="nav_link" href="{% url 'certificates'  %}">Сертификаты</a>
+    </nav>
+</header>
+
+{% block content %}
+{% endblock %}
+
+<footer class="basement">
+    <div class="b1">
+        <span>&#169 ООО  2021 "Темпесто-бел" </span>
+        <div class="block_img">
+            <a href="https://www.facebook.com/tempesto.ru/"><img src="{% static 'img/f.png' %}" alt="facebook"
+                                                                 class="f_img"></a>
+            <a href="https://www.instagram.com/tempesto.ru/"><img src="{% static 'img/instagram.png' %}" alt="facebook"
+                                                                  class="f_img"></a>
+        </div>
+        <a href="https://www.deltapowersolutions.com/ru-ru/index.php">Delta Power Solutions</a>
+    </div>
+    <div class="b2">
+        <a href="https://yandex.by/maps/org/tempesto_bel/244711925625/?ll=28.360379%2C54.096287&z=17.32" class="b2_text">Мы находимся здесь <img src="{% static 'img/yandex-map.png' %}" alt="Яндекс" class="f_img"></a>
+{#        <a href="" class="b2_text">О нас</a>#}
+    </div>
+    <div class="b3">
+        <a href="tel:+375 29 855 05 16">МТС +375 29 855 05 16</a>
+        <a href="tel:+375 29 122 01 90">А1 +375 29 122 01 90</a>
+        <a href="mailto:info@tempesto.by">info@tempesto.by</a>
+    </div>
+</footer>
+</body>
+</html>

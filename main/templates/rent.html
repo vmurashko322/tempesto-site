@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <div class="rent">
+        <div class="rent_text">
+            <h1>Аренда ИБП</h1>
+        </div>
+        <div class="main_text">
+            <p>Предоставляем в аренду ИБП любой мощности в комплектации с АКБ, PDU, SNMP, STS и пр.</p>
+            <p>Минимальный срок аренды – 2 месяца с правом выкупа оборудования по остаточной стоимости.</p>
+            <p>В стоимость аренды включены доставка, шеф-монтажные и пуско-наладочные работы, плановое сервисное обслуживание.</p>
+        </div>
+    <div >
+        <img src="{% static 'img/scheme_tempesto.png' %}" alt="Tempesto-bel авторизированный дистрибьютор" class="img">
+    </div>
+    </div>
+{% endblock %}

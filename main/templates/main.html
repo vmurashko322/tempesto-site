@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="intro">
+
+        <div class="main_block">
+            <h1 class="main_text_h1">
+                TEMPESTO-BEL
+            </h1>
+            <h2 class="main_text_h2">Правильные ИБП по честной цене</h2>
+            <div class="main_text_another">Темпесто - дистрибьютор ИБП Delta, управляемое PDU RCNTEC</div>
+            <div class="main_text_another">Поставка оборудования, проектирование, монтаж, обслуживание.</div>
+
+
+        </div>
+        <div class="button">
+            <a href="{% url 'select' %}"
+               class="closing-button"><span> Запрос оборудования </span></a>
+        </div>
+
+    </div>
+{% endblock %}

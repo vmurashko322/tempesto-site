@@ -1,0 +1,376 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+
+}
+
+/*.container{*/
+/*    width: 100%;*/
+/*    max-width: 1200px;*/
+/*    margin: 0 auto;*/
+/*}*/
+.header_logo {
+    height: 90px;
+    margin-left: 10%;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/t3.jpg") no-repeat center;
+}
+
+
+/*навигационное меню*/
+.header {
+    background: azure;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 200;
+
+
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+
+}
+
+.nav {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+    transition: color .1s linear;
+    position: relative;
+
+}
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+
+    background-color: #4891cd;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+}
+
+.nav_link:hover {
+    color: #4891cd;
+}
+
+.nav_link:hover:after {
+    opacity: 1;
+}
+
+/*футер*/
+.basement {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+.b1 {
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.b2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: color .1s linear;
+}
+
+.b3 {
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.b2_text {
+    color: black;
+    text-decoration: none;
+    transition: color .1s linear;
+    position: relative;
+}
+
+.b2_text:hover {
+    color: #4891cd;
+}
+
+.b2_text:after {
+    content: '';
+
+    width: 100%;
+    height: 2px;
+    display: none;
+    background-color: #4891cd;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.b2_text:hover:after {
+    display: block;
+}
+
+.f_img {
+    width: 20px;
+    height: 20px;
+}
+
+.text_footer {
+    text-decoration: none;
+    color: lightslategray;
+}
+
+/*главная страница*/
+.main_block {
+    /*padding-top: 10%;*/
+    /*padding-left: 10%;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*color: azure;*/
+    /*justify-content: space-around;*/
+    padding-top: 10%;
+    padding-left: 10%;
+    margin: 0 auto;
+
+
+}
+
+.main_text_h1 {
+    display: inline-block;
+    background-color: #4891cd;
+    font-size: 50px;
+    margin-bottom: 1px;
+    padding: 0 10px;
+}
+
+.main_text_h2 {
+    display: inline-block;
+    background-color: #4891cd;
+    font-size: 45px;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+
+.main_text_another {
+    display: inline-block;
+    background-color: azure;
+    margin: 5px;
+    padding: 0 10px;
+    font-weight: normal;
+
+}
+
+/*кнопка запрос оборудования*/
+.button {
+    margin: 0 10%;
+}
+
+.closing-button {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    color: #000000;
+    box-shadow: 0 0 0 2px white;
+    padding: 20px 5px;
+    width: auto;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.closing-button span {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: 5;
+}
+
+.closing-button:before, .closing-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/* тут изменил 100 на 0*/
+.closing-button:before {
+    transform: translateX(-0%);
+    background: white;
+    transition: transform .3s cubic-bezier(.55, .055, .675, .19);
+}
+
+.closing-button:after {
+    background: #76a4d0;
+    transform: translateX(100%);
+    transition: transform .3s cubic-bezier(.16, .73, .58, .62) .3s;
+}
+
+.closing-button:hover:before, .closing-button:hover:after {
+    transform: translateX(0);
+}
+
+/*страница оборудование*/
+.all_equip {
+    background-color: #4891cd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    align-items: center;
+
+}
+
+
+.equip_img {
+    width: 300px;
+    height: 150px;
+
+}
+
+.equip_img_smaller {
+    height: 150px;
+    width: 150px;
+}
+
+
+.block_text {
+    margin-bottom: 50px;
+}
+
+.block_img {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.equip_text {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    transition: color .1s;
+    position: relative;
+}
+
+.equip_text:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+}
+
+.equip_text:hover {
+    color: white;
+}
+
+.equip_text:hover:after {
+    opacity: 1;
+}
+
+/*Сервис*/
+.b_service{
+    background-color: #4891cd;
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+.all_list{
+    padding-left: 8%;
+}
+.service_text{
+   text-align: center;
+}
+
+.text{
+    font-weight: bold;
+}
+
+/*Аренда*/
+.rent{
+    background-color: #4891cd;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+.rent_text{
+      text-align: center;
+}
+.main_text{
+    margin-left: 5%;
+}
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Сертификаты*/
+.b1_cert{
+    background-color: #4891cd;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.cert_text{
+    text-align: center;
+}
+
+.end_text{
+    padding-top: 10%;
+}
+
+.block_request{
+    background-color: #4891cd;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
+
+.request_result{
+    background-color: #4891cd;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+}
